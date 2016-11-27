@@ -1,9 +1,7 @@
-package com.example.armsingh.birthday;
+package com.example.armsingh.aggregator;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.renderscript.Sampler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -28,19 +26,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setContentView(com.example.armsingh.aggregator.R.layout.activity_main);
+        Toolbar toolbar = (Toolbar) findViewById(com.example.armsingh.aggregator.R.id.toolbar);
         setSupportActionBar(toolbar);
-        POPULAR_MOVIES = getResources().getString(R.string.popular_movies);
-        STOCK_HAWK = getResources().getString(R.string.stock_hawk);
-        BUILD_IT_BIGGER = getResources().getString(R.string.build_it_bigger);
-        MAKE_UR_APP_MATERIAL = getResources().getString(R.string.make_your_app_material);
-        GO_UBIQUITOUS = getResources().getString(R.string.go_ubiquitous);
-        CAPSTONE_MY_OWN_APP = getResources().getString(R.string.capstone_my_own_app);
-        TOAST_DISPLAY = getResources().getString(R.string.toast_display_message);
+        POPULAR_MOVIES = getResources().getString(com.example.armsingh.aggregator.R.string.popular_movies);
+        STOCK_HAWK = getResources().getString(com.example.armsingh.aggregator.R.string.stock_hawk);
+        BUILD_IT_BIGGER = getResources().getString(com.example.armsingh.aggregator.R.string.build_it_bigger);
+        MAKE_UR_APP_MATERIAL = getResources().getString(com.example.armsingh.aggregator.R.string.make_your_app_material);
+        GO_UBIQUITOUS = getResources().getString(com.example.armsingh.aggregator.R.string.go_ubiquitous);
+        CAPSTONE_MY_OWN_APP = getResources().getString(com.example.armsingh.aggregator.R.string.capstone_my_own_app);
+        TOAST_DISPLAY = getResources().getString(com.example.armsingh.aggregator.R.string.toast_display_message);
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(com.example.armsingh.aggregator.R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(com.example.armsingh.aggregator.R.menu.menu_main, menu);
         return true;
     }
 
@@ -65,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == com.example.armsingh.aggregator.R.id.action_settings) {
             return true;
         }
 

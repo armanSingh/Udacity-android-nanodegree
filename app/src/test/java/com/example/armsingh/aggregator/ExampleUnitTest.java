@@ -1,4 +1,4 @@
-package com.example.armsingh.birthday;
+package com.example.armsingh.aggregator;
 
 import org.junit.Test;
 
