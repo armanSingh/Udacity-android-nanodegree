@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private String POPULAR_MOVIES;
-    private String STAWK_HAWK;
+    private String STOCK_HAWK;
     private String BUILD_IT_BIGGER;
     private String MAKE_UR_APP_MATERIAL;
     private String GO_UBIQUITOUS;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         POPULAR_MOVIES = getResources().getString(R.string.popular_movies);
-        STAWK_HAWK = getResources().getString(R.string.stock_hawk);
+        STOCK_HAWK = getResources().getString(R.string.stock_hawk);
         BUILD_IT_BIGGER = getResources().getString(R.string.build_it_bigger);
         MAKE_UR_APP_MATERIAL = getResources().getString(R.string.make_your_app_material);
         GO_UBIQUITOUS = getResources().getString(R.string.go_ubiquitous);
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayToastStockHawk(View view){
         Context context = getApplicationContext();
-        CharSequence displayText = TOAST_DISPLAY + POPULAR_MOVIES.toLowerCase();
+        CharSequence displayText = TOAST_DISPLAY + STOCK_HAWK.toLowerCase();
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, displayText, duration);
         toast.show();
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayToastBuildItBigger(View view){
         Context context = getApplicationContext();
-        CharSequence displayText = TOAST_DISPLAY + POPULAR_MOVIES.toLowerCase();
+        CharSequence displayText = TOAST_DISPLAY + BUILD_IT_BIGGER.toLowerCase();
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, displayText, duration);
         toast.show();
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayToastMakeUrAppMaterial(View view){
         Context context = getApplicationContext();
-        CharSequence displayText = TOAST_DISPLAY + POPULAR_MOVIES.toLowerCase();
+        CharSequence displayText = TOAST_DISPLAY + MAKE_UR_APP_MATERIAL.toLowerCase();
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, displayText, duration);
         toast.show();
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayToastGoUbiquitous(View view){
         Context context = getApplicationContext();
-        CharSequence displayText = TOAST_DISPLAY + POPULAR_MOVIES.toLowerCase();
+        CharSequence displayText = TOAST_DISPLAY + GO_UBIQUITOUS.toLowerCase();
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, displayText, duration);
         toast.show();
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayToastCapstone(View view){
         Context context = getApplicationContext();
-        CharSequence displayText = TOAST_DISPLAY + POPULAR_MOVIES.toLowerCase();
+        CharSequence displayText = TOAST_DISPLAY + CAPSTONE_MY_OWN_APP.toLowerCase();
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, displayText, duration);
         toast.show();
